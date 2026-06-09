@@ -1,0 +1,31 @@
+# Environment variables
+.env
+.env.*
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data
+data/
+*.zip
+*.tar.gz
+*.csv
+
+# IDEs
+.vscode/
+.idea/

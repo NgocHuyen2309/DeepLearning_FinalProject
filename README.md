@@ -25,10 +25,10 @@ Hệ thống được thiết kế theo chuẩn **Microservices (Vi dịch vụ)
 
 ## 👥 Đội ngũ Phát triển (Team Roles & Alignment)
 
-* **Gay (Cloud Architect & Core Backend):** Thiết lập hạ tầng Azure (Hub-Spoke, Bastion, Blob Storage). Code API Gateway và nghiệp vụ bằng **Java Spring Boot**, quản lý Database qua JPA. Đảm bảo giao tiếp REST mượt mà với AI Worker.
-* **Hoàng (Data Pipeline & ViT Specialist):** Xử lý tiền kỳ ảnh (MTCNN). Xây dựng, huấn luyện mô hình ViT và logic trích xuất Attention Map. Tích hợp pipeline này thành API Endpoint trong **FastAPI**.
-* **Beo (CNN Specialist & Frontend Dev):** Cấu hình và fine-tune ResNet-50. Viết thuật toán Grad-CAM và kết hợp Mediapipe XAI. Tích hợp endpoint vào **FastAPI**. Xây dựng toàn bộ giao diện UI bằng **Next.js** gọi lên server Java.
-* **Linh lé (Data Analyst & Evaluation Lead):** Phân tích dữ liệu gốc (EDA). Benchmark so sánh Trade-off giữa ViT và ResNet. Vẽ sơ đồ kiến trúc Microservices, Dataflow và tổng hợp báo cáo/slide cuối kỳ.
+* **Huỳnh Minh Trí (Cloud Architect & Core Backend):** Thiết lập hạ tầng Azure (Hub-Spoke, Bastion, Blob Storage). Code API Gateway và nghiệp vụ bằng **Java Spring Boot**, quản lý Database qua JPA. Đảm bảo giao tiếp REST mượt mà với AI Worker.
+* **Phạm Duy Hoàng (Data Pipeline & ViT Specialist):** Xử lý tiền kỳ ảnh (MTCNN). Xây dựng, huấn luyện mô hình ViT và logic trích xuất Attention Map. Tích hợp pipeline này thành API Endpoint trong **FastAPI**.
+* **Hứa Thị Ngọc Huyền (CNN Specialist & Frontend Dev):** Cấu hình và fine-tune ResNet-50. Viết thuật toán Grad-CAM và kết hợp Mediapipe XAI. Tích hợp endpoint vào **FastAPI**. Xây dựng toàn bộ giao diện UI bằng **Next.js** gọi lên server Java.
+* **Võ Lê Khánh Linh (Data Analyst & Evaluation Lead):** Phân tích dữ liệu gốc (EDA). Benchmark so sánh Trade-off giữa ViT và ResNet. Vẽ sơ đồ kiến trúc Microservices, Dataflow và tổng hợp báo cáo/slide cuối kỳ.
 
 ---
 
