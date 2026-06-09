@@ -1,0 +1,42 @@
+.skeletonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.skeletonBlock {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+.title {
+  height: 24px;
+  width: 40%;
+}
+
+.text {
+  height: 16px;
+  width: 80%;
+}
+
+.textShort {
+  height: 16px;
+  width: 60%;
+}
+
+.imageBox {
+  height: 200px;
+  width: 100%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
