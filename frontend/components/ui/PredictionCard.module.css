@@ -1,0 +1,57 @@
+.card {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modelName {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.confidence {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.confidence.fake {
+  color: #ef4444; /* red-500 */
+}
+
+.confidence.real {
+  color: #10b981; /* emerald-500 */
+}
+
+.progressBarContainer {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.fake .progressBar {
+  background-color: #ef4444;
+}
+
+.real .progressBar {
+  background-color: #10b981;
+}
