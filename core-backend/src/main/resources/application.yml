@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 200 # Cho phép xử lý song song lên tới 200 request từ Front-end
+
+spring:
+  application:
+    name: core-backend
+  
+  # Cấu hình Database PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/deepfake_db
+    username: postgres
+    password: Tri10032005173$
+    driver-class-name: org.postgresql.Driver
+    
+  # Cấu hình Hibernate (Tự động tạo bảng)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  # Cấu hình multipart cho Upload File
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# Cấu hình kết nối sang Python AI Worker
+ai:
+  worker:
+    base-url: http://localhost:8001/api/v1
+    timeout-seconds: 30 # WebClient timeout (do Python bị Lock luồng)
+
+# Nơi lưu trữ ảnh gốc và ảnh heatmap đã giải mã Base64
+storage:
+  upload-dir: ./uploads
